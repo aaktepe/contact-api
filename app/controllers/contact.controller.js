@@ -131,20 +131,3 @@ exports.delete = (req, res) => {
         });
       });
   };
-
-// Delete all Contacts from the database.
-exports.deleteAll = (req, res) => {
-    Contact.destroy({
-      where: { uid: req.userId },
-      truncate: false
-    })
-      .then(nums => {
-        res.send({ message: `${nums} Contacts were deleted successfully!` });
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-            err.message || "Some error occurred while removing all contacts."
-        });
-      });
-  };
