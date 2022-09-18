@@ -1,0 +1,37 @@
+{
+  "name": "contact-api",
+  "version": "1.0.0",
+  "description": "This is a simple JSON-based REST API developed for the user to access, add, delete and search their contacts., built with Node, Express, and Sequelize.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaktepe/contact-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "mysql",
+    "rest",
+    "api"
+  ],
+  "author": "aaktepe",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aaktepe/contact-api/issues"
+  },
+  "homepage": "https://github.com/aaktepe/contact-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.0",
+    "sequelize-cli": "^6.4.1",
+    "umzug": "^3.2.1"
+  }
+}

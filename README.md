@@ -4,6 +4,10 @@
 
 This is a simple JSON-based REST API developed for the user to access, add, delete and search their contacts., built with Node, Express, and Sequelize.
 
+### Install
+
+You need to execute `npm install` command in terminal
+
 ### Environments
 When connecting to the database, Sequelize will use the 'development' environment by default, unless it detects an environment variable telling it otherwise. This is defined in db/models/index.js, where the connection to the database is made:
 
