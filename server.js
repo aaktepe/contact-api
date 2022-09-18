@@ -33,7 +33,6 @@ app.get("/", (req, res) => {
 require('./app/routes/auth.routes')(app);
 require('./app/routes/contact.routes')(app);
 
-/* <PROJECT_ROOT>/index.js */
 var migrations = require("./migrations");
 
 // Run migrations & seeds

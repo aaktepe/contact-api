@@ -15,6 +15,8 @@ When connecting to the database, Sequelize will use the 'development' environmen
 
 This allows us to easily switch between connecting with a test database running on localhost, and a production database.
 
+You need to change **config.json** to access the database.
+
 ## Routes / Endpoints
 The following routes are set up, and will return JSON data:
 
@@ -33,3 +35,15 @@ The following routes are set up, and will return JSON data:
 
 ### Migrations and Seeders
 All migrations and seeders will be executed automatically when the system is up. There is no need to do anything.
+
+### Test Users
+
++ username: Test Abdurrahman, password: P@ssword123!
++ username: Test Abdurrahman2, password: P@ssword123!
+
+### Test Contacts
+
++ firstName: Abdurrahman, lastname: Aktepe, company:Mobilist, phone:+905076426118/19, uid:1
++ firstName: Abdurrahman, lastname: Aktepe2, company:Mobilist, phone:+905076426120/21, uid:1
++ firstName: Abdurrahman, lastname: Aktepe3, company:Mobilist, phone:+905076426122/23, uid:2
++ firstName: Abdurrahman, lastname: Aktepe4, company:Mobilist, phone:+905076426124/25, uid:2
