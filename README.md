@@ -8,6 +8,10 @@ This is a simple JSON-based REST API developed for the user to access, add, dele
 
 You need to execute `npm install` command in terminal
 
+### Usage
+
+You need to execute `node server.js` command in terminal
+
 ### Environments
 When connecting to the database, Sequelize will use the 'development' environment by default, unless it detects an environment variable telling it otherwise. This is defined in db/models/index.js, where the connection to the database is made:
 
@@ -15,7 +19,7 @@ When connecting to the database, Sequelize will use the 'development' environmen
 
 This allows us to easily switch between connecting with a test database running on localhost, and a production database.
 
-You need to change **config.json** to access the database.
+You have to update the `config.json` file to use the API.
 
 ## Routes / Endpoints
 The following routes are set up, and will return JSON data:
