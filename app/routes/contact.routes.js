@@ -1,4 +1,4 @@
-const { authJwt } = require("../middleware");contact
+const { authJwt } = require("../middleware");
 module.exports = app => {
     const contact = require("../controllers/contact.controller.js");
 
@@ -18,9 +18,6 @@ module.exports = app => {
   
     // Delete a Contact with id
     router.delete("/:id", [authJwt.verifyToken], contact.delete);
-  
-    // Delete all Contacts
-    router.delete("/", [authJwt.verifyToken], contact.deleteAll);
   
     app.use('/api/contacts', router);
 };

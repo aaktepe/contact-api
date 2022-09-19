@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up ({ context: queryInterface }) {
     await queryInterface.bulkInsert('Contacts', [{
       firstname: 'Abdurrahman',
       lastname: 'Aktepe',
